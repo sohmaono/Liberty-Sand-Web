@@ -44,9 +44,4 @@ export const addingPattyArray: AddingMenuType[] = [
     price: 324,
     priceWithoutTax: 300,
   },
-  {
-    title: "",
-    price: 0,
-    priceWithoutTax: 0,
-  },
 ];

@@ -16,7 +16,7 @@ export default function Cart() {
   };
   return (
     <form
-      className="flex flex-col gap-[30px] w-[509px]"
+      className="flex flex-col gap-[30px]"
       onSubmit={handleSubmit(onSubmit)}
     >
       <CartItemsCountMessage />

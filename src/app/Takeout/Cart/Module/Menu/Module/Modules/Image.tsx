@@ -1,6 +1,9 @@
+import TakeoutOrderType from "@/Data/Type/TakeoutOrder";
 import Image from "next/image";
 
-export default function CartMenuModuleImage() {
+export default function CartMenuModuleImage(props: {
+  takeoutOrder: TakeoutOrderType;
+}) {
   return (
     <Image
       alt="Menu"

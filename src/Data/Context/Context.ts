@@ -7,6 +7,8 @@ type ContextType = {
   setTab: Dispatch<SetStateAction<HeaderTabType>>;
   selectedTakeout: TakeoutOrderType | null;
   setSelectedTakeout: Dispatch<SetStateAction<TakeoutOrderType | null>>;
+  cartItems: TakeoutOrderType[];
+  setCartItems: Dispatch<SetStateAction<TakeoutOrderType[]>>;
 };
 
 export const CustomContext = createContext<ContextType | undefined>(undefined);

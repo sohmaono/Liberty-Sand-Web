@@ -1,9 +1,14 @@
-export default function CartMenuModuleTitle() {
+import TakeoutOrderType from "@/Data/Type/TakeoutOrder";
+
+export default function CartMenuModuleTitle(props: {
+  takeoutOrder: TakeoutOrderType;
+}) {
+  const { takeoutOrder } = props;
   return (
     <div className="[font-family:'Inter-BlackItalic',Helvetica] font-black italic text-[color:var(--tokens-card-text)] text-[18px] leading-[27px]">
-      LIBERTY CLUB HOUSE SANDWICH
+      {takeoutOrder.menu!.title}
       <br />
-      （リバティクラブハウスサンド）
+      {takeoutOrder.menu!.titleJP}
     </div>
   );
 }

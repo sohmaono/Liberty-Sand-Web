@@ -2,6 +2,8 @@ import { useEffect, useRef } from "react";
 import ModalTopping from "./Adding/Topping";
 import ModalDrink from "./Drink/Drink";
 import { useCustomContext } from "@/Data/Context/Context";
+import ModalPatty from "./Adding/Patty";
+import ModalConfirmation from "./Confirmation/page";
 
 export default function Modal() {
   const { setSelectedTakeout } = useCustomContext();
@@ -24,7 +26,9 @@ export default function Modal() {
       <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 overflow-y-auto h-full">
         <div className="flex flex-col gap-10 my-10" ref={wrapperRef}>
           <ModalTopping />
+          <ModalPatty />
           <ModalDrink />
+          <ModalConfirmation />
         </div>
       </div>
     </div>

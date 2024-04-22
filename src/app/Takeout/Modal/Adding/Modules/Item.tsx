@@ -5,13 +5,17 @@ export default function ModalAddingItemModule(props: {
   addingFunc: (addingMenuType: AddingMenuType) => void;
   selected: boolean;
 }) {
-  const { addingMenuType, addingFunc } = props;
+  const { addingMenuType, addingFunc, selected } = props;
   return (
     <div
       className="flex items-center gap-[15px] cursor-pointer"
       onClick={() => addingFunc(addingMenuType)}
     >
-      <div className="relative w-[14px] h-[14px] bg-[#dedede] rounded-full"></div>
+      <div className="flex justify-center items-center w-[14px] h-[14px] bg-[#dedede] rounded-full">
+        {selected ? (
+          <div className="w-[9px] h-[9px] rounded-full bg-token-header-backgound" />
+        ) : null}
+      </div>
       <div className="flex items-center gap-[20px]">
         <div className="[font-family:'Inter-BlackItalic',Helvetica] font-black italic text-[#4d4d4d] text-[16px]">
           {addingMenuType.title}
@@ -25,7 +29,6 @@ export default function ModalAddingItemModule(props: {
           </div>
         </div>
       </div>
-      hello
     </div>
   );
 }

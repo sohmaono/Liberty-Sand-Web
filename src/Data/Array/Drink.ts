@@ -1,3 +1,5 @@
+import DrinkType from "../Type/Drink";
+
 const drinkMenuArray: DrinkType[] = [
   {
     title: "Original Blend Coffee",
