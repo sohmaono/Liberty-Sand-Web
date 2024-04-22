@@ -3,27 +3,46 @@
 @tailwind utilities;
 
 :root {
+  --primitive-brand-red: rgba(226, 34, 34, 1);
+  --primitive-color-grey-0: rgba(255, 255, 255, 1);
+  --primitive-color-primary-red: rgba(226, 34, 34, 1);
+  --primitive-grey-0: rgba(255, 255, 255, 1);
+  --primitive-grey-1: rgba(249, 249, 249, 1);
+  --primitive-grey-2: rgba(223, 223, 223, 1);
+  --primitive-grey-3: rgba(157, 157, 157, 0.51);
+  --primitive-grey-4: rgba(78, 78, 78, 1);
+  --primitive-grey-5: rgba(0, 0, 0, 1);
+  --token-header-backgound: var(--primitive-color-primary-red);
+  --token-header-text-duplicate: var(--primitive-color-grey-0);
+  --tokens-body-background: var(--primitive-grey-1);
+  --tokens-button-backgound: var(--primitive-brand-red);
+  --tokens-button-text: var(--primitive-grey-0);
+  --tokens-card-background: var(--primitive-grey-0);
+  --tokens-card-text: var(--primitive-grey-4);
+  --tokens-form-background: var(--primitive-grey-0);
+  --tokens-form-hinttext: var(--primitive-grey-4);
+  --tokens-header-background: var(--primitive-brand-red);
+  --tokens-header-ordericon: var(--primitive-grey-5);
+  --tokens-header-text: var(--primitive-grey-0);
+  --tokens-sidemenu-backgound: var(--primitive-brand-red);
+  --tokens-sidemenu-barrier: var(--primitive-grey-3);
+  --tokens-sidemenu-text: var(--primitive-grey-0);
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --background-start-rgb: 234, 239, 240;
   --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
+    --background-start-rgb: 240, 240, 240;
     --background-end-rgb: 0, 0, 0;
   }
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
