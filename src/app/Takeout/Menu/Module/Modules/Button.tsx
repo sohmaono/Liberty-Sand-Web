@@ -6,6 +6,7 @@ export default function MenuModuleButton(props: { menuType: MenuType }) {
   const { setSelectedTakeout } = useCustomContext();
   const handleOrder = () => {
     setSelectedTakeout({
+      id: Math.random(),
       menu: menuType,
       drink: null,
       toppings: null,

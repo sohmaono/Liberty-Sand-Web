@@ -3,9 +3,10 @@ import Header from "./Header/page";
 import Menu from "./Menu/page";
 import Cart from "./Cart/page";
 import Modal from "./Modal/page";
+import SideBar from "./SideBar/page";
 
 export default function Takeout() {
-  const { tab, selectedTakeout } = useCustomContext();
+  const { tab, selectedTakeout, openSideBar } = useCustomContext();
   return (
     <div className="relative w-full h-full">
       <div className="flex items-center flex-col">
@@ -14,7 +15,8 @@ export default function Takeout() {
         </div>
         <div className="my-48">{tab === "CART" ? <Cart /> : <Menu />}</div>
       </div>
-      {selectedTakeout ? <Modal /> : null}
+      {selectedTakeout && <Modal />}
+      {openSideBar && <SideBar />}
     </div>
   );
 }

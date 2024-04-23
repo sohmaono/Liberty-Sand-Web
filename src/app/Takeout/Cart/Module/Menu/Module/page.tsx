@@ -3,6 +3,7 @@ import CartMenuModuleDescription from "./Modules/Description";
 import CartMenuModuleImage from "./Modules/Image";
 import CartMenuModulePrice from "./Modules/Price";
 import CartMenuModuleTitle from "./Modules/Title";
+import CartMenuModuleButtons from "./Modules/Buttons";
 
 export default function CartMenuModule(props: {
   takeoutOrder: TakeoutOrderType;
@@ -15,6 +16,7 @@ export default function CartMenuModule(props: {
         <CartMenuModuleTitle takeoutOrder={takeoutOrder} />
         <CartMenuModuleDescription takeoutOrder={takeoutOrder} />
         <CartMenuModulePrice takeoutOrder={takeoutOrder} />
+        <CartMenuModuleButtons takeoutOrder={takeoutOrder} />
       </div>
     </div>
   );

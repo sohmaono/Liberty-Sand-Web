@@ -6,7 +6,7 @@ import ModalPatty from "./Adding/Patty";
 import ModalConfirmation from "./Confirmation/page";
 
 export default function Modal() {
-  const { setSelectedTakeout } = useCustomContext();
+  const { selectedTakeout, setSelectedTakeout } = useCustomContext();
   const wrapperRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const handleClick = (event: MouseEvent) => {
@@ -25,9 +25,9 @@ export default function Modal() {
     <div className="fixed inset-0 h-full w-full bg-black bg-opacity-40 z-20">
       <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 overflow-y-auto h-full">
         <div className="flex flex-col gap-10 my-10" ref={wrapperRef}>
-          <ModalTopping />
-          <ModalPatty />
-          <ModalDrink />
+          {selectedTakeout?.menu?.type === 0 ? <ModalTopping /> : null}
+          {selectedTakeout?.menu?.type === 2 ? <ModalPatty /> : null}
+          {selectedTakeout?.menu?.type !== 3 ? <ModalDrink /> : null}
           <ModalConfirmation />
         </div>
       </div>

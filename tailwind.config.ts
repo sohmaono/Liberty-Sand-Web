@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        primary: "var(--primary)",
         textcolor: "var(--textcolor)",
         "primitive-grey-2": "var(--primitive-grey-2)",
         "token-header-backgound": "var(--token-header-backgound)",

@@ -9,7 +9,7 @@ export default function MenuModule(props: { menuType: MenuType }) {
   const { menuType } = props;
   return (
     <div className="flex flex-col items-center">
-      <MenuModuleImage />
+      <MenuModuleImage menuType={menuType} />
       <div className="flex flex-col items-start gap-[30px] p-[20px] bg-[color:var(--tokens-card-background)] rounded-[0px_0px_10px_10px] w-[477px]">
         <div className="flex flex-col items-start gap-[15px] w-full">
           <MenuModuleTitle menuType={menuType} />

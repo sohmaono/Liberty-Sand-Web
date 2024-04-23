@@ -4,12 +4,13 @@ import Image from "next/image";
 export default function CartMenuModuleImage(props: {
   takeoutOrder: TakeoutOrderType;
 }) {
+  const { takeoutOrder } = props;
   return (
     <Image
       alt="Menu"
-      src={`/MenuPics/リバティクラブハウスサンド.jpeg`}
+      src={`/MenuPics/${takeoutOrder.menu?.picture}.jpeg`}
       width={433}
-      height={327}
+      height={247}
     />
   );
 }

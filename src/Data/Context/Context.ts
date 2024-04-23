@@ -9,6 +9,8 @@ type ContextType = {
   setSelectedTakeout: Dispatch<SetStateAction<TakeoutOrderType | null>>;
   cartItems: TakeoutOrderType[];
   setCartItems: Dispatch<SetStateAction<TakeoutOrderType[]>>;
+  openSideBar: boolean;
+  setOpenSideBar: Dispatch<SetStateAction<boolean>>;
 };
 
 export const CustomContext = createContext<ContextType | undefined>(undefined);
