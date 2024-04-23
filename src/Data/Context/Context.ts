@@ -1,6 +1,7 @@
 import { Dispatch, SetStateAction, createContext, useContext } from "react";
 import HeaderTabType from "../Type/HeaderTab";
 import TakeoutOrderType from "../Type/TakeoutOrder";
+import TakeoutFormType from "../Type/TakeoutForm";
 
 type ContextType = {
   tab: HeaderTabType;
@@ -11,6 +12,8 @@ type ContextType = {
   setCartItems: Dispatch<SetStateAction<TakeoutOrderType[]>>;
   openSideBar: boolean;
   setOpenSideBar: Dispatch<SetStateAction<boolean>>;
+  takeoutForm: TakeoutFormType | null;
+  setTakeoutForm: Dispatch<SetStateAction<TakeoutFormType | null>>;
 };
 
 export const CustomContext = createContext<ContextType | undefined>(undefined);

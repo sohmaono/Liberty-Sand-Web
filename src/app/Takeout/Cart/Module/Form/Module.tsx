@@ -25,7 +25,7 @@ export default function CartFormModule(props: {
             className="flex-1 h-[40px] bg-[color:var(--tokens-card-background)] rounded-[10px] [font-family:'Inter-SemiBold',Helvetica] font-semibold text-[#4e4e4e] text-[22px] px-2"
             {...formValue.register(propertyName, {
               required: true,
-              pattern: propertyName === "mailAddress" ? /^S+@S+$/i : undefined,
+              pattern: undefined,
             })}
           />
         </div>

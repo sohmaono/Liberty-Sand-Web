@@ -4,8 +4,7 @@ import HeaderTabType from "@/Data/Type/HeaderTab";
 import { useState } from "react";
 import Takeout from "./Takeout/page";
 import TakeoutOrderType from "@/Data/Type/TakeoutOrder";
-import Experiment from "./experiment";
-import SlideInElement from "./Experiment/experiment";
+import TakeoutFormType from "@/Data/Type/TakeoutForm";
 
 export default function Home() {
   const [tab, setTab] = useState<HeaderTabType>("SANDWICH");
@@ -13,6 +12,7 @@ export default function Home() {
     useState<TakeoutOrderType | null>(null);
   const [cartItems, setCartItems] = useState<TakeoutOrderType[]>([]);
   const [openSideBar, setOpenSideBar] = useState<boolean>(false);
+  const [takeoutForm, setTakeoutForm] = useState<TakeoutFormType | null>(null);
   return (
     <CustomContext.Provider
       value={{
@@ -24,6 +24,8 @@ export default function Home() {
         setCartItems,
         openSideBar,
         setOpenSideBar,
+        takeoutForm,
+        setTakeoutForm,
       }}
     >
       <Takeout />
