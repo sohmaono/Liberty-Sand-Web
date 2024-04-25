@@ -5,6 +5,7 @@ import { useState } from "react";
 import Takeout from "./Takeout/page";
 import TakeoutOrderType from "@/Data/Type/TakeoutOrder";
 import TakeoutFormType from "@/Data/Type/TakeoutForm";
+import Experiment1 from "./Experiment/experiment";
 
 export default function Home() {
   const [tab, setTab] = useState<HeaderTabType>("SANDWICH");
@@ -28,7 +29,8 @@ export default function Home() {
         setTakeoutForm,
       }}
     >
-      <Takeout />
+      {/* <Takeout /> */}
+      <Experiment1 />
     </CustomContext.Provider>
   );
 }

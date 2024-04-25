@@ -6,11 +6,13 @@ export default function CartMenuModuleImage(props: {
 }) {
   const { takeoutOrder } = props;
   return (
-    <Image
-      alt="Menu"
-      src={`/MenuPics/${takeoutOrder.menu?.picture}.jpeg`}
-      width={433}
-      height={247}
-    />
+    <div className="w-[477px] h-[220px] relative">
+      <Image
+        alt="Menu"
+        src={`/MenuPics/${takeoutOrder.menu?.picture}.jpeg`}
+        layout="fill"
+        objectFit="cover"
+      />
+    </div>
   );
 }

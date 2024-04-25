@@ -2,11 +2,13 @@ import Image from "next/image";
 
 export default function OrderConfirmationMenuModuleImage() {
   return (
-    <Image
-      alt="メニュー"
-      src={"/MenuPics/リバティクラブハウスサンド.jpeg"}
-      width={433}
-      height={250}
-    />
+    <div className="w-[433px] h-[220px] relative">
+      <Image
+        alt="メニュー"
+        src={"/MenuPics/リバティクラブハウスサンド.jpeg"}
+        layout="fill"
+        objectFit="cover"
+      />
+    </div>
   );
 }

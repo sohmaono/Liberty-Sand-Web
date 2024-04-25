@@ -1,23 +1,14 @@
-import React, { useState } from "react";
-import "./styles.css"; // アニメーション用のCSSファイルをインポート
+import Image from "next/image";
 
-const SlideInOutElement = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  const handleButtonClick = () => {
-    setIsVisible(!isVisible);
-  };
-
+export default function Experiment1() {
   return (
-    <div>
-      <button onClick={handleButtonClick}>Toggle Element</button>
-      {isVisible && (
-        <div>
-          <div className={`slide-in`}>Slide In/Out Content</div>
-        </div>
-      )}
+    <div className="w-[433px] h-[230px] relative">
+      <Image
+        src={"/MenuPics/リバティクラブハウスサンド.jpeg"}
+        alt="menuPic"
+        layout="fill"
+        objectFit="cover"
+      />
     </div>
   );
-};
-
-export default SlideInOutElement;
+}
