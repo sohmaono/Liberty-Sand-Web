@@ -1,15 +1,15 @@
 import { useCustomContext } from "@/Data/Context/Context";
-import MenuMapSandwich from "./Map/Sandwich";
-import MenuMapHamburger from "./Map/Hamburger";
-import MenuMapSideMenu from "./Map/SideMenu";
+import MainMenuSandwich from "./MainMenu/Sandwich";
+import MainMenuHamburger from "./MainMenu/Hamburger";
+import MainMenuSideMenu from "./MainMenu/SideMenu";
 
 export default function Menu() {
   const { tab } = useCustomContext();
   return tab === "SANDWICH" ? (
-    <MenuMapSandwich />
+    <MainMenuSandwich />
   ) : tab === "HAMBURGER" ? (
-    <MenuMapHamburger />
+    <MainMenuHamburger />
   ) : tab === "SIDE MENU" ? (
-    <MenuMapSideMenu />
-  ) : null;
+    <MainMenuSideMenu />
+  ) : null; // <MenuMapSideMenu />
 }

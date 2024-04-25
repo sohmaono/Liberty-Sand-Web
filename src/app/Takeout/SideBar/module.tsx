@@ -1,8 +1,13 @@
-export default function SideBarModule(props: { title: string }) {
-  const { title } = props;
+import Link from "next/link";
+
+export default function SideBarModule(props: { title: string; link: string }) {
+  const { title, link } = props;
   return (
-    <p className="[font-family:'Inter-BlackItalic',Helvetica] font-black italic text-white text-[18px] cursor-pointer">
+    <Link
+      href={`/${link}`}
+      className="[font-family:'Inter-BlackItalic',Helvetica] font-black italic text-white text-[18px] cursor-pointer"
+    >
       {title}
-    </p>
+    </Link>
   );
 }

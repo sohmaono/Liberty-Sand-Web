@@ -14,8 +14,12 @@ export default function CartMenuModuleButtons(props: {
   };
   return (
     <div className="flex justify-between">
-      <div onClick={handleChangeFunc}>変更</div>
-      <div onClick={handleDeleteFunc}>削除</div>
+      <div className="text-black" onClick={handleChangeFunc}>
+        変更
+      </div>
+      <div className="text-black" onClick={handleDeleteFunc}>
+        削除
+      </div>
     </div>
   );
 }

@@ -1,10 +1,10 @@
-import { useCustomContext } from "@/Data/Context/Context";
-import SideBarModule from "./module";
-import "./styles.css";
+import { useBookingContext } from "@/Data/Context/BookingContext";
 import { useEffect, useRef } from "react";
+import BookingSideBarModule from "./Module";
+import "./styles.css";
 
-export default function SideBarMap() {
-  const { setOpenSideBar } = useCustomContext();
+export default function BookingSideBarMap() {
+  const { setOpenSideBar } = useBookingContext();
   const wrapperRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const handleClick = (event: MouseEvent) => {
@@ -24,14 +24,18 @@ export default function SideBarMap() {
       className="flex flex-col items-start gap-[30px] bg-primary pr-[60px] pl-[20px] py-[60px] h-full slide-in absolute top-0 left-0"
     >
       {sideBarArray.map((sideBar, index) => (
-        <SideBarModule key={index} title={sideBar[0]} link={sideBar[1]} />
+        <BookingSideBarModule
+          key={index}
+          title={sideBar[0]}
+          link={sideBar[1]}
+        />
       ))}
     </div>
   );
 }
 
 const sideBarArray: [string, string][] = [
-  ["席のご予約", "Booking"],
+  ["テイクアウトのご予約", ""],
   ["アクセス", ""],
   ["お問い合わせ", ""],
 ];
