@@ -1,3 +1,4 @@
+"use client";
 import { useEffect, useRef } from "react";
 import ModalTopping from "./Adding/Topping";
 import ModalDrink from "./Drink/Drink";

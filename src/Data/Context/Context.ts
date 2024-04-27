@@ -1,3 +1,4 @@
+"use client";
 import { Dispatch, SetStateAction, createContext, useContext } from "react";
 import HeaderTabType from "../Type/HeaderTab";
 import TakeoutOrderType from "../Type/TakeoutOrder";

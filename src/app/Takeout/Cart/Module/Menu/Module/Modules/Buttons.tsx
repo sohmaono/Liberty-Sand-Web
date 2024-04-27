@@ -13,12 +13,18 @@ export default function CartMenuModuleButtons(props: {
     setCartItems((prev) => prev.filter((prev) => takeoutOrder !== prev));
   };
   return (
-    <div className="flex justify-between">
-      <div className="text-black" onClick={handleChangeFunc}>
-        変更
+    <div className="flex justify-between w-full">
+      <div
+        className="flex justify-center py-[6px] px-5 rounded-xl bg-gray-500 cursor-pointer"
+        onClick={handleDeleteFunc}
+      >
+        <div className="text-white font-extrabold text-[14px]">削除</div>
       </div>
-      <div className="text-black" onClick={handleDeleteFunc}>
-        削除
+      <div
+        className="flex justify-center py-[6px] px-5 rounded-xl bg-primary cursor-pointer"
+        onClick={handleChangeFunc}
+      >
+        <div className="text-white font-extrabold text-[14px]">変更</div>
       </div>
     </div>
   );

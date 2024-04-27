@@ -14,7 +14,7 @@ export default function ModalDrinkItemModule(props: { drinkType: DrinkType }) {
   if (drinkType.type === 0 || drinkType.type === 1) {
     return (
       <div
-        className="flex items-center gap-[15px] cursor-pointer"
+        className="flex items-center gap-[15px] cursor-pointer w-full"
         onClick={selectFunc}
       >
         <div className="flex justify-center items-center w-[14px] h-[14px] bg-[#dedede] rounded-full">
@@ -22,9 +22,19 @@ export default function ModalDrinkItemModule(props: { drinkType: DrinkType }) {
             <div className="w-[9px] h-[9px] rounded-full bg-token-header-backgound" />
           ) : null}
         </div>
-        <div className="flex items-center gap-[20px]">
-          <div className="[font-family:'Inter-BlackItalic',Helvetica] font-black italic text-[#4d4d4d] text-[16px]">
-            {drinkType.title}
+        <div className="flex items-center gap-[20px] w-full justify-between">
+          <div className="flex flex-col">
+            <div className="flex items-center gap-2">
+              <p className="[font-family:'Inter-BlackItalic',Helvetica] font-black italic text-[#4d4d4d] text-[16px]">
+                {drinkType.title}
+              </p>
+              <p className="[font-family:'Inter-BlackItalic',Helvetica] font-black italic text-[#4d4d4d] text-[16px]">
+                {drinkType.note && `（${drinkType.note}）`}
+              </p>
+            </div>
+            <p className="[font-family:'Inter-BlackItalic',Helvetica] font-black italic text-[#4d4d4d] text-[11px] ml-4">
+              （{drinkType.titleJP}）
+            </p>
           </div>
           <div className="flex items-center gap-[10px]">
             <div className="[font-family:'Inter-BlackItalic',Helvetica] font-black italic text-[#4d4d4d] text-[16px]">

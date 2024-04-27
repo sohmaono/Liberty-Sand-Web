@@ -10,9 +10,9 @@ export default function CartMenuModule(props: {
 }) {
   const { takeoutOrder } = props;
   return (
-    <div className="flex-col items-center min-w-[433px] w-[433px] flex">
+    <div className="flex-col items-center flex">
       <CartMenuModuleImage takeoutOrder={takeoutOrder} />
-      <div className="flex flex-col items-start gap-[20px] p-[20px] bg-[color:var(--tokens-card-background)] rounded-[0px_0px_10px_10px]">
+      <div className="flex flex-col items-start gap-[20px] p-[20px] bg-[color:var(--tokens-card-background)] rounded-b-md min-w-[433px] w-[433px]">
         <CartMenuModuleTitle takeoutOrder={takeoutOrder} />
         <CartMenuModuleDescription takeoutOrder={takeoutOrder} />
         <CartMenuModulePrice takeoutOrder={takeoutOrder} />

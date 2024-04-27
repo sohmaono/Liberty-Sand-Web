@@ -1,3 +1,4 @@
+"use client";
 import { useBookingContext } from "@/Data/Context/BookingContext";
 import { useEffect, useRef } from "react";
 import BookingSideBarModule from "./Module";
@@ -17,7 +18,7 @@ export default function BookingSideBarMap() {
     };
     document.addEventListener("mousedown", handleClick);
     return () => document.removeEventListener("mousedown", handleClick);
-  }, []);
+  }, [setOpenSideBar]);
   return (
     <div
       ref={wrapperRef}

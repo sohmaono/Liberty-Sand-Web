@@ -10,6 +10,7 @@ export default function MenuModuleImage(props: { menuType: MenuType }) {
         src={`/MenuPics/${menuType.picture}.jpeg`}
         layout="fill"
         objectFit="cover"
+        className="rounded-t-md"
       />
     </div>
   ) : null;

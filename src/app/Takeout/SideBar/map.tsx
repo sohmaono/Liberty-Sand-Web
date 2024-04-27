@@ -1,3 +1,4 @@
+"use client";
 import { useCustomContext } from "@/Data/Context/Context";
 import SideBarModule from "./module";
 import "./styles.css";
@@ -17,7 +18,7 @@ export default function SideBarMap() {
     };
     document.addEventListener("mousedown", handleClick);
     return () => document.removeEventListener("mousedown", handleClick);
-  }, []);
+  }, [setOpenSideBar]);
   return (
     <div
       ref={wrapperRef}
