@@ -10,10 +10,12 @@ export default function CartMenuModuleImage(props: {
       <Image
         alt="Menu"
         src={`/MenuPics/${takeoutOrder.menu?.picture}.jpeg`}
-        layout="fill"
-        objectFit="cover"
         className="rounded-t-md"
-      />
+        fill
+        sizes="100vw"
+        style={{
+          objectFit: "cover"
+        }} />
     </div>
   );
 }

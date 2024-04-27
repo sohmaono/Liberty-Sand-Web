@@ -16,19 +16,28 @@ export default function HeaderTopSideMenuBtn() {
         src="/Header/Header-SideMenu-Line.png"
         width={25}
         height={3}
-      />
+        style={{
+          maxWidth: "100%",
+          height: "auto"
+        }} />
       <Image
         alt="Menu"
         src="/Header/Header-SideMenu-Line.png"
         width={25}
         height={3}
-      />
+        style={{
+          maxWidth: "100%",
+          height: "auto"
+        }} />
       <Image
         alt="Menu"
         src="/Header/Header-SideMenu-Line.png"
         width={25}
         height={3}
-      />
+        style={{
+          maxWidth: "100%",
+          height: "auto"
+        }} />
     </div>
   );
 }

@@ -2,11 +2,26 @@ import { useCustomContext } from "@/Data/Context/Context";
 import calcTakeoutSumPrice from "@/Data/Function/Takeout-Sum-Price";
 
 export default function ModalConfirmationMenuBottom() {
-  const { selectedTakeout, setSelectedTakeout, setCartItems } =
+  const { tab, cartItems, selectedTakeout, setSelectedTakeout, setCartItems } =
     useCustomContext();
   const handleAddToCart = () => {
-    setCartItems((prev) => [...prev, selectedTakeout!]);
-    setSelectedTakeout(null);
+    if (tab !== "CART") {
+      setCartItems((prev) => [...prev, selectedTakeout!]);
+      setSelectedTakeout(null);
+    } else {
+      var index = 0;
+
+      for (const cartItem of cartItems) {
+        if (selectedTakeout?.id === cartItem.id) {
+          break;
+        }
+        index += 1;
+      }
+      var copiedCartItems = cartItems;
+      copiedCartItems[index] = selectedTakeout!;
+      setCartItems(copiedCartItems);
+      setSelectedTakeout(null);
+    }
   };
   return (
     <div className="flex items-center justify-between w-full gap-5">
@@ -27,7 +42,7 @@ export default function ModalConfirmationMenuBottom() {
         className="w-max py-2 px-10 rounded-full bg-primary [font-family:'Inter-ExtraBold_Italic',Helvetica] font-extrabold italic text-white text-[14px]"
         onClick={handleAddToCart}
       >
-        +追加する
+        {tab === "CART" ? "変更する" : "+追加する"}
       </button>
     </div>
   );

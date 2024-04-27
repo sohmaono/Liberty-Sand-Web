@@ -2,7 +2,7 @@ import MainMenuType from "../Type/MainMenu";
 
 const sideMenuMainMenuArray: MainMenuType[] = [
   {
-    title: "FRIED MENU",
+    title: null,
     subtitle: null,
     menus: [
       {

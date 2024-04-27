@@ -8,10 +8,12 @@ export default function ModalConfirmationMenuImage() {
       <Image
         alt="SELECTED MENU"
         src={`/MenuPics/${selectedTakeout?.menu?.picture}.jpeg`}
-        layout="fill"
-        objectFit="cover"
         className="rounded-t-md"
-      />
+        fill
+        sizes="100vw"
+        style={{
+          objectFit: "cover"
+        }} />
     </div>
   );
 }

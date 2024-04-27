@@ -6,9 +6,11 @@ export default function OrderConfirmationMenuModuleImage() {
       <Image
         alt="メニュー"
         src={"/MenuPics/リバティクラブハウスサンド.jpeg"}
-        layout="fill"
-        objectFit="cover"
-      />
+        fill
+        sizes="100vw"
+        style={{
+          objectFit: "cover"
+        }} />
     </div>
   );
 }

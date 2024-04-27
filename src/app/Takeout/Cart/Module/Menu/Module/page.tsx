@@ -4,6 +4,7 @@ import CartMenuModuleImage from "./Modules/Image";
 import CartMenuModulePrice from "./Modules/Price";
 import CartMenuModuleTitle from "./Modules/Title";
 import CartMenuModuleButtons from "./Modules/Buttons";
+import CartMenuModuleAddings from "./Modules/Addings.tsx/page";
 
 export default function CartMenuModule(props: {
   takeoutOrder: TakeoutOrderType;
@@ -15,6 +16,7 @@ export default function CartMenuModule(props: {
       <div className="flex flex-col items-start gap-[20px] p-[20px] bg-[color:var(--tokens-card-background)] rounded-b-md min-w-[433px] w-[433px]">
         <CartMenuModuleTitle takeoutOrder={takeoutOrder} />
         <CartMenuModuleDescription takeoutOrder={takeoutOrder} />
+        <CartMenuModuleAddings takeoutOrder={takeoutOrder} />
         <CartMenuModulePrice takeoutOrder={takeoutOrder} />
         <CartMenuModuleButtons takeoutOrder={takeoutOrder} />
       </div>

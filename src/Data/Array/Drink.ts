@@ -1,6 +1,239 @@
 import DrinkType from "../Type/Drink";
+import DrinkMainMenu from "../Type/DrinkMainMenu";
 
-const drinkMenuArray: DrinkType[] = [
+export const drinkMainMenuArray: DrinkMainMenu[] = [
+  {
+    title: "Coffee",
+    subtitle:
+      "IFNi ROASTING.CO生産 当店のサンドイッチの味に合わせた鮮度の良いオリジナルブレンド豆を使用",
+    drinks: [
+      {
+        title: "Original Blend Coffee",
+        titleJP: "オリジナルブレンド HOTコーヒー",
+        note: null,
+        price: 432,
+        priceWithoutTax: 400,
+        type: 0,
+      },
+      {
+        title: "Iced Coffee",
+        titleJP: "オリジナルブレンド アイスコーヒー",
+        note: null,
+        price: 432,
+        priceWithoutTax: 400,
+        type: 0,
+      },
+      {
+        title: "Cafe au lait",
+        titleJP: "クリーミー・オレ",
+        note: "ICE",
+        price: 486,
+        priceWithoutTax: 460,
+        type: 1,
+      },
+      {
+        title: "Cafe au lait",
+        titleJP: "クリーミー・オレ",
+        note: "HOT",
+        price: 486,
+        priceWithoutTax: 460,
+        type: 1,
+      },
+    ],
+  },
+  {
+    title: "Tea",
+    subtitle: "香りのいい スッキリしたテイストをセレクト",
+    drinks: [
+      {
+        title: "Iced Tea",
+        titleJP: "水出しアイスティ",
+        note: null,
+        price: 432,
+        priceWithoutTax: 400,
+        type: 0,
+      },
+      {
+        title: "Darjeeling Earlgrey",
+        titleJP: "ダージリンアールグレイ",
+        note: "HOT",
+        price: 432,
+        priceWithoutTax: 400,
+        type: 0,
+      },
+      {
+        title: "Ginger Lemon Tea",
+        titleJP: "ジンジャーレモンティ",
+        note: "HOT",
+        price: 432,
+        priceWithoutTax: 400,
+        type: 0,
+      },
+      {
+        title: "Apricot Tea",
+        titleJP: "アプリコットティ",
+        note: "HOT",
+        price: 432,
+        priceWithoutTax: 400,
+        type: 0,
+      },
+      {
+        title: "Rooibos Tea",
+        titleJP: "ルイボスティ",
+        note: "HOT",
+        price: 432,
+        priceWithoutTax: 400,
+        type: 0,
+      },
+    ],
+  },
+  {
+    title: "Milk",
+    subtitle: "甘味の強い大阿蘇産牛乳を使用 クリーミーなミルクの泡",
+    drinks: [
+      {
+        title: "Creamy Milk",
+        titleJP: "クリーミーミルク",
+        note: "ICE",
+        price: 432,
+        priceWithoutTax: 400,
+        type: 0,
+      },
+      {
+        title: "Creamy Milk",
+        titleJP: "クリーミーミルク",
+        note: "HOT",
+        price: 432,
+        priceWithoutTax: 400,
+        type: 0,
+      },
+    ],
+  },
+  {
+    title: "Soda",
+    subtitle: null,
+    drinks: [
+      {
+        title: "Coca-cola",
+        titleJP: "コカ・コーラ",
+        note: null,
+        price: 432,
+        priceWithoutTax: 400,
+        type: 1,
+      },
+      {
+        title: "Ginger Ale",
+        titleJP: "ジンジャーエール・甘口",
+        note: "Sweet",
+        price: 432,
+        priceWithoutTax: 400,
+        type: 1,
+      },
+      {
+        title: "Ginger Ale",
+        titleJP: "ジンジャーエール・辛口",
+        note: "Spicy",
+        price: 432,
+        priceWithoutTax: 400,
+        type: 1,
+      },
+    ],
+  },
+  {
+    title: "Fruit Juice",
+    subtitle: null,
+    drinks: [
+      {
+        title: "Mix Berry",
+        titleJP: "ミックスベリージュース",
+        note: null,
+        price: 432,
+        priceWithoutTax: 400,
+        type: 0,
+      },
+      {
+        title: "Mango",
+        titleJP: "マンゴージュース",
+        note: null,
+        price: 432,
+        priceWithoutTax: 400,
+        type: 0,
+      },
+      {
+        title: "Lemonade",
+        titleJP: "レモネード",
+        note: null,
+        price: 432,
+        priceWithoutTax: 400,
+        type: 0,
+      },
+      {
+        title: "Orange",
+        titleJP: "オレンジジュース",
+        note: null,
+        price: 432,
+        priceWithoutTax: 400,
+        type: 0,
+      },
+      {
+        title: "Vegetable (Organic)",
+        titleJP: "オーガニック野菜ジュース",
+        note: null,
+        price: 486,
+        priceWithoutTax: 450,
+        type: 1,
+      },
+    ],
+  },
+  {
+    title: "Banana Milk",
+    subtitle: null,
+    drinks: [
+      {
+        title: "Banana Milk",
+        titleJP: "バナナミルク",
+        note: null,
+        price: 540,
+        priceWithoutTax: 500,
+        type: 2,
+      },
+      {
+        title: "Cheese Cake Banana Milk",
+        titleJP: "チーズ・バナナミルク",
+        note: null,
+        price: 594,
+        priceWithoutTax: 500,
+        type: 2,
+      },
+      {
+        title: "Strawberry Cheese Banana Milk",
+        titleJP: "ストロベリーチーズ・バナナミルク",
+        note: null,
+        price: 702,
+        priceWithoutTax: 650,
+        type: 2,
+      },
+      {
+        title: "Choco Banana Milk",
+        titleJP: "チョコバナナミルク",
+        note: null,
+        price: 648,
+        priceWithoutTax: 600,
+        type: 2,
+      },
+      {
+        title: "Green Tea Banana Milk",
+        titleJP: "抹茶バナナミルク",
+        note: null,
+        price: 648,
+        priceWithoutTax: 600,
+        type: 2,
+      },
+    ],
+  },
+];
+
+export const drinkMenuArray: DrinkType[] = [
   {
     title: "Original Blend Coffee",
     titleJP: "オリジナルブレンド HOTコーヒー",
@@ -194,5 +427,3 @@ const drinkMenuArray: DrinkType[] = [
     type: 2,
   },
 ];
-
-export default drinkMenuArray;

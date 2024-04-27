@@ -6,9 +6,11 @@ export default function Experiment1() {
       <Image
         src={"/MenuPics/リバティクラブハウスサンド.jpeg"}
         alt="menuPic"
-        layout="fill"
-        objectFit="cover"
-      />
+        fill
+        sizes="100vw"
+        style={{
+          objectFit: "cover"
+        }} />
     </div>
   );
 }

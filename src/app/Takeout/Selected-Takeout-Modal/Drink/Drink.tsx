@@ -1,4 +1,4 @@
-import drinkMenuArray from "@/Data/Array/Drink";
+import { drinkMenuArray } from "@/Data/Array/Drink";
 import ModalDrinkItemModule from "./Modules/Item";
 import ModalDrinkTitle from "./Modules/Title";
 

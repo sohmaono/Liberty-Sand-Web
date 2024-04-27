@@ -1,5 +1,5 @@
 import { useCustomContext } from "@/Data/Context/Context";
-import CartMenuModule from "./Module/pages";
+import CartMenuModule from "./Module/page";
 
 export default function CartMenuMap() {
   const { cartItems } = useCustomContext();

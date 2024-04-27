@@ -15,5 +15,6 @@ const tabTypeArray: HeaderTabType[] = [
   "SANDWICH",
   "HAMBURGER",
   "SIDE MENU",
+  "DRINKS",
   "CART",
 ];
