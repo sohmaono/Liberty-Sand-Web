@@ -9,7 +9,7 @@ export default function HeaderTabModule(props: { tabType: HeaderTabType }) {
       className="flex flex-col items-center cursor-pointer"
       onClick={() => setTab(tabType)}
     >
-      <div className="relative mt-[-1px] [font-family:'Inter-BlackItalic',Helvetica] font-black italic text-token-header-text-duplicate text-[18px]">
+      <div className="[font-family:'Inter-BlackItalic',Helvetica] font-black italic text-token-header-text-duplicate text-[18px]">
         {tabType}
       </div>
       <div
