@@ -1,5 +1,5 @@
 import MenuType from "@/Data/Type/Menu";
-import MenuModule from "./Module/page";
+import MenuModule from "./Module/pages";
 
 export default function MenuMap(props: { menuArray: MenuType[] }) {
   const { menuArray } = props;

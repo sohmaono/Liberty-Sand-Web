@@ -4,8 +4,8 @@ import ModalTopping from "./Adding/Topping";
 import ModalDrink from "./Drink/Drink";
 import { useCustomContext } from "@/Data/Context/Context";
 import ModalPatty from "./Adding/Patty";
-import ModalConfirmation from "./Confirmation/page";
-import ModalConfirmationDrink from "./DrinkModal/page";
+import ModalConfirmation from "./Confirmation/pages";
+import ModalConfirmationDrink from "./DrinkModal/pages";
 
 export default function Modal() {
   const { selectedTakeout, setSelectedTakeout } = useCustomContext();

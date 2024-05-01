@@ -1,4 +1,4 @@
-import MenuDrinkModule from "./Module/page";
+import MenuDrinkModule from "./Module/pages";
 import DrinkType from "@/Data/Type/Drink";
 
 export default function MenuDrinkMap(props: { drinks: DrinkType[] }) {

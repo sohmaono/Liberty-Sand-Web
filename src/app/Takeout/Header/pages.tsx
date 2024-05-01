@@ -1,6 +1,6 @@
 import HeaderTabMap from "./Tab/Map";
 import HeaderTitle from "./Top/Module/Title";
-import HeaderTop from "./Top/page";
+import HeaderTop from "./Top/pages";
 
 export default function Header() {
   return (

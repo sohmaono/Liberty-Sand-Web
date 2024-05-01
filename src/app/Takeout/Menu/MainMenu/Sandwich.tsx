@@ -1,5 +1,5 @@
 import sandwichMainMenuArray from "@/Data/Array/Sandwich";
-import MainMenuModule from "./Module/page";
+import MainMenuModule from "./Module/pages";
 
 export default function MainMenuSandwich() {
   return (

@@ -1,5 +1,5 @@
 import { useCustomContext } from "@/Data/Context/Context";
-import ModalConfirmationAddings from "./Addings/page";
+import ModalConfirmationAddings from "./Addings/pages";
 
 export default function ModalConfirmationMenuTop() {
   const { selectedTakeout } = useCustomContext();

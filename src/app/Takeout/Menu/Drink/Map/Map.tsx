@@ -1,5 +1,5 @@
 import { drinkMainMenuArray } from "@/Data/Array/Drink";
-import MainMenuDrinkModule from "../MainMenu/page";
+import MainMenuDrinkModule from "../MainMenu/pages";
 
 export default function MainMenuDrinkMap() {
   return (

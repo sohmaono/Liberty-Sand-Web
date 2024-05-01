@@ -1,5 +1,5 @@
 import hamburgerMainMenuArray from "@/Data/Array/Hamburger";
-import MainMenuModule from "./Module/page";
+import MainMenuModule from "./Module/pages";
 
 export default function MainMenuHamburger() {
   return (

@@ -1,10 +1,10 @@
 import { useCustomContext } from "@/Data/Context/Context";
-import Header from "./Header/page";
-import Menu from "./Menu/page";
-import Cart from "./Cart/page";
-import Modal from "./Selected-Takeout-Modal/page";
-import SideBar from "./SideBar/page";
-import OrderConfirmationModal from "./Order-Confirmation-Modal/page";
+import Header from "./Header/pages";
+import Menu from "./Menu/pages";
+import Cart from "./Cart/pages";
+import Modal from "./Selected-Takeout-Modal/pages";
+import SideBar from "./SideBar/pages";
+import OrderConfirmationModal from "./Order-Confirmation-Modal/pages";
 
 export default function Takeout() {
   const { tab, selectedTakeout, openSideBar, takeoutForm } = useCustomContext();

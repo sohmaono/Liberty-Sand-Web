@@ -1,5 +1,5 @@
 import { useCustomContext } from "@/Data/Context/Context";
-import OrderConfirmationMenuModule from "./Module/page";
+import OrderConfirmationMenuModule from "./Module/pages";
 
 export default function OrderConfirmationMenu() {
   const { cartItems } = useCustomContext();

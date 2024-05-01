@@ -2,7 +2,7 @@
 import { CustomContext } from "@/Data/Context/Context";
 import HeaderTabType from "@/Data/Type/HeaderTab";
 import { useState } from "react";
-import Takeout from "./Takeout/page";
+import Takeout from "./Takeout/pages";
 import TakeoutOrderType from "@/Data/Type/TakeoutOrder";
 import TakeoutFormType from "@/Data/Type/TakeoutForm";
 import HeaderCartBtn from "./Takeout/Header/Top/Module/Cart-Btn";

@@ -1,5 +1,4 @@
-import ModalConfirmationButton from "./Button";
-import ModalConfirmationMenu from "./Menu/page";
+import ModalConfirmationMenu from "./Menu/pages";
 
 export default function ModalConfirmation() {
   return (
