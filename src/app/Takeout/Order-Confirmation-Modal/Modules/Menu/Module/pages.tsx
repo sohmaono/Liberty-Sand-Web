@@ -1,18 +1,24 @@
+import TakeoutOrderType from "@/Data/Type/TakeoutOrder";
+import OrderConfirmationMenuAddings from "./Addings/pages";
 import OrderConfirmationMenuModuleImage from "./Image";
 import OrderConfirmationMenuModuleDescription from "./description";
 import OrderConfirmationMenuModulePrice from "./price";
 import OrderConfirmationMenuModuleTitle from "./title";
 
-export default function OrderConfirmationMenuModule() {
+export default function OrderConfirmationMenuModule(props: {
+  takeoutOrder: TakeoutOrderType;
+}) {
+  const { takeoutOrder } = props;
   return (
     <div className="flex flex-col">
-      <OrderConfirmationMenuModuleImage />
-      <div className="flex flex-col items-start gap-[30px] min-w-[433px] w-[433px] bg-white p-[20px]">
+      <OrderConfirmationMenuModuleImage takeoutOrder={takeoutOrder} />
+      <div className="flex flex-col items-start gap-[30px] min-w-[433px] w-[433px] bg-white p-[20px] rounded-b-md">
         <div className="flex flex-col items-start gap-[20px]">
-          <OrderConfirmationMenuModuleTitle />
-          <OrderConfirmationMenuModuleDescription />
+          <OrderConfirmationMenuModuleTitle takeoutOrder={takeoutOrder} />
+          <OrderConfirmationMenuModuleDescription takeoutOrder={takeoutOrder} />
+          <OrderConfirmationMenuAddings takeoutOrder={takeoutOrder} />
         </div>
-        <OrderConfirmationMenuModulePrice />
+        <OrderConfirmationMenuModulePrice takeoutOrder={takeoutOrder} />
       </div>
     </div>
   );

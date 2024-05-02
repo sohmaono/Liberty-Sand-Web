@@ -3,15 +3,11 @@ import DrinkType from "@/Data/Type/Drink";
 
 export default function ModalDrinkButton(props: { drink: DrinkType }) {
   const { drink } = props;
-  const { setSelectedTakeout } = useCustomContext();
+  const { selectedTakeout, setSelectedTakeout, setCartItems } =
+    useCustomContext();
   const handleAddFunc = () => {
-    setSelectedTakeout({
-      id: Math.random(),
-      menu: null,
-      drink: drink,
-      toppings: null,
-      patty: null,
-    });
+    setCartItems((prev) => [...prev, selectedTakeout!]);
+    setSelectedTakeout(null);
   };
   return (
     <button
