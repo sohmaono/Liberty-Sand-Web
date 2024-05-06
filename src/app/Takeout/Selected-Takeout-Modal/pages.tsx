@@ -6,6 +6,7 @@ import { useCustomContext } from "@/Data/Context/Context";
 import ModalPatty from "./Adding/Patty";
 import ModalConfirmation from "./Confirmation/pages";
 import ModalConfirmationDrink from "./DrinkModal/pages";
+import ComponentCloseBtn from "@/app/Components/CloseBtn";
 
 export default function Modal() {
   const { selectedTakeout, setSelectedTakeout } = useCustomContext();
@@ -27,14 +28,18 @@ export default function Modal() {
     <div className="fixed inset-0 h-full w-full bg-black bg-opacity-40 z-20">
       <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 overflow-y-auto h-full">
         {selectedTakeout?.menu ? (
-          <div
-            className="flex flex-col gap-10 my-10 items-center"
-            ref={wrapperRef}
-          >
-            {selectedTakeout?.menu?.type === 0 ? <ModalTopping /> : null}
-            {selectedTakeout?.menu?.type === 2 ? <ModalPatty /> : null}
-            {selectedTakeout?.menu?.type !== 3 ? <ModalDrink /> : null}
-            <ModalConfirmation />
+          <div className="flex flex-col gap-3 items-end my-10">
+            <ComponentCloseBtn
+              closeFunc={() => {
+                setSelectedTakeout(null);
+              }}
+            />
+            <div className="flex flex-col gap-10 items-center" ref={wrapperRef}>
+              {selectedTakeout?.menu?.type === 0 ? <ModalTopping /> : null}
+              {selectedTakeout?.menu?.type === 2 ? <ModalPatty /> : null}
+              {selectedTakeout?.menu?.type !== 3 ? <ModalDrink /> : null}
+              <ModalConfirmation />
+            </div>
           </div>
         ) : (
           selectedTakeout?.drink && (

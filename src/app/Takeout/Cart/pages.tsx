@@ -19,14 +19,17 @@ export default function Cart() {
   };
   return (
     <form
-      className="flex flex-col gap-[30px]"
+      className="overflow-y-scroll w-full py-5"
+      style={{ height: "89vh" }}
       onSubmit={handleSubmit(onSubmit)}
     >
-      <CartItemsCountMessage />
-      <CartMenuMap />
-      <CartTotalCostMessage />
-      <CartFormMap formValue={formValue} />
-      <CartOrderBtn />
+      <div className="flex flex-col gap-[30px] h-max">
+        <CartItemsCountMessage />
+        <CartMenuMap />
+        <CartTotalCostMessage />
+        <CartFormMap formValue={formValue} />
+        <CartOrderBtn />
+      </div>
     </form>
   );
 }
