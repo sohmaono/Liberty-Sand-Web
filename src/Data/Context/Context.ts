@@ -15,6 +15,7 @@ type ContextType = {
   setOpenSideBar: Dispatch<SetStateAction<boolean>>;
   takeoutForm: TakeoutFormType | null;
   setTakeoutForm: Dispatch<SetStateAction<TakeoutFormType | null>>;
+  screenWidth: number;
 };
 
 export const CustomContext = createContext<ContextType | undefined>(undefined);

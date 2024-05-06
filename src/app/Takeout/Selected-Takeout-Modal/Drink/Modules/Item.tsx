@@ -22,8 +22,8 @@ export default function ModalDrinkItemModule(props: { drinkType: DrinkType }) {
             <div className="w-[9px] h-[9px] rounded-full bg-token-header-backgound" />
           ) : null}
         </div>
-        <div className="flex items-center gap-[20px] w-full justify-between">
-          <div className="flex flex-col">
+        <div className="flex md:flex-row flex-col items-center md:gap-[20px] gap-1 w-full md:justify-between">
+          <div className="flex flex-col self-start">
             <div className="flex items-center gap-2">
               <p className="[font-family:'Inter-BlackItalic',Helvetica] font-black italic text-[#4d4d4d] text-[16px]">
                 {drinkType.title}
@@ -36,7 +36,7 @@ export default function ModalDrinkItemModule(props: { drinkType: DrinkType }) {
               （{drinkType.titleJP}）
             </p>
           </div>
-          <div className="flex items-center gap-[10px]">
+          <div className="flex items-center gap-[10px] self-end">
             <div className="[font-family:'Inter-BlackItalic',Helvetica] font-black italic text-[#4d4d4d] text-[16px]">
               {drinkType.type === 0 ? 324 : 356}円
             </div>

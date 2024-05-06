@@ -5,7 +5,7 @@ import ModalConfirmationMenuAddings from "./Addings/pages";
 export default function ModalConfirmationAddings() {
   const { selectedTakeout } = useCustomContext();
   return (
-    <div className="flex flex-col items-start gap-5 w-max">
+    <div className="flex flex-col items-start gap-5 md:w-max self-center w-full">
       {selectedTakeout?.patty && (
         <ModalConfirmationMenuAddings
           title="パティ"

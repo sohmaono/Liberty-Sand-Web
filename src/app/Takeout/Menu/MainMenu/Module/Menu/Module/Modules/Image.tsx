@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function MenuModuleImage(props: { menuType: MenuType }) {
   const { menuType } = props;
   return menuType.showPicture ? (
-    <div className="w-[477px] h-[327px] relative">
+    <div className="md:w-[477px] w-[330px] md:h-[327px] h-[230px] relative">
       <Image
         alt="MenuPic"
         src={`/MenuPics/${menuType.picture}.jpeg`}
@@ -12,8 +12,9 @@ export default function MenuModuleImage(props: { menuType: MenuType }) {
         fill
         sizes="100vw"
         style={{
-          objectFit: "cover"
-        }} />
+          objectFit: "cover",
+        }}
+      />
     </div>
   ) : null;
 }

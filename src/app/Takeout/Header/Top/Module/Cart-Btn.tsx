@@ -16,14 +16,14 @@ export default function HeaderCartBtn() {
       onClick={selectCart}
     >
       <div className="flex flex-col items-start space-y-[-5px] ">
-        <p className="[font-family:'Inter-BlackItalic',Helvetica] font-black italic text-token-header-text-duplicate text-[17px]">
+        <p className="[font-family:'Inter-BlackItalic',Helvetica] font-black italic text-token-header-text-duplicate text-[15px] md:text-[17px]">
           CART
         </p>
-        <p className="[font-family:'Inter-BlackItalic',Helvetica] font-semibold italic text-token-header-text-duplicate text-[10px]">
+        <p className="[font-family:'Inter-BlackItalic',Helvetica] font-semibold italic text-token-header-text-duplicate text-[8px] md:text-[10px]">
           ご注文はこちらから
         </p>
       </div>
-      <div className="w-[30px] h-[30px] relative">
+      <div className="md:w-[30px] md:h-[30px] w-[25px] h-[25px] relative">
         <Image
           alt="Cart"
           src={`/Header/Header-Cart-Icon.svg`}

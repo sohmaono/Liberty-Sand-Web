@@ -30,7 +30,7 @@ export default function ModalTopping() {
     );
   };
   return (
-    <div className="flex flex-col gap-[40px] bg-white rounded-[20px] py-[30px] w-[600px] px-[20px]">
+    <div className="flex flex-col gap-[40px] bg-white rounded-[20px] py-[30px] md:w-[600px] w-[360px] px-[20px]">
       <ModalAddingTitle title={"トッピングはいかがですか？"} />
       <div className="flex flex-col gap-[24px] w-max">
         {addingToppingArray.map((addingMenuType, index) => (

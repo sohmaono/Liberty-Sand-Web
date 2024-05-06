@@ -6,17 +6,19 @@ export default function ModalConfirmationAddingsModule(props: {
   const { addingMenu } = props;
   return (
     <div
-      className={`flex items-center gap-[12px] ml-5 ${
+      className={`flex items-center gap-[12px] ml-5 w-full ${
         addingMenu.type === 0 && "w-[300px]"
       }`}
     >
-      <div className="[font-family:'Inter-BlackItalic',Helvetica] font-black italic text-[#4d4d4d] text-[16px]">
-        +
+      <div className={`flex items-center gap-[12px] self-start`}>
+        <div className="[font-family:'Inter-BlackItalic',Helvetica] font-black italic text-[#4d4d4d] text-[16px]">
+          +
+        </div>
+        <div className="[font-family:'Inter-BlackItalic',Helvetica] font-black italic text-[#4d4d4d] text-[16px]">
+          {addingMenu.title}
+        </div>
       </div>
-      <div className="[font-family:'Inter-BlackItalic',Helvetica] font-black italic text-[#4d4d4d] text-[16px]">
-        {addingMenu.title}
-      </div>
-      <div className="flex items-center gap-[10px] ml-2">
+      <div className="flex items-center gap-[10px] ml-2 self-end">
         <div className="[font-family:'Inter-BlackItalic',Helvetica] font-black italic text-[#4d4d4d] text-[16px]">
           {addingMenu.price}円
         </div>

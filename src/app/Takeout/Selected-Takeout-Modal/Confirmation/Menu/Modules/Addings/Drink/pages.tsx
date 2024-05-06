@@ -6,7 +6,7 @@ export default function ModalConfirmationMenuDrinks() {
   return (
     <div className="flex flex-col items-start w-full">
       <ModalConfirmationDrinksTitle />
-      <div className="flex gap-5 items-center w-full justify-between">
+      <div className="flex md:gap-5 gap-2 items-center w-full md:justify-between flex-col md:flex-row">
         <ModalConfirmationDrinkModule />
         <ModalConfirmationDrinkDeleteBtn />
       </div>

@@ -2,8 +2,8 @@ import MainMenuType from "../Type/MainMenu";
 
 const sandwichMainMenuArray: MainMenuType[] = [
   {
-    title: null,
-    subtitle: null,
+    title: "定番のサンドイッチ！",
+    subtitle: "トッピングを選択できます",
     menus: [
       {
         title: "Liberty Club House Sandwich",

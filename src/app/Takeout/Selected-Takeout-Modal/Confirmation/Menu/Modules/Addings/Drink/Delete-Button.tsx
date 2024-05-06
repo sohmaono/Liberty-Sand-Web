@@ -7,7 +7,7 @@ export default function ModalConfirmationDrinkDeleteBtn() {
   };
   return (
     <button
-      className="flex h-6 w-14 bg-primary items-center justify-center rounded-full"
+      className="flex h-6 w-14 bg-primary items-center justify-center rounded-full self-end md:self-auto"
       onClick={handleDeleteDrink}
     >
       <p className="[font-family:'Inter-BlackItalic',Helvetica] font-black italic text-white text-[13px]">

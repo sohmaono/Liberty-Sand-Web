@@ -36,7 +36,7 @@ export default function ModalConfirmationMenuAddings(props: {
       {addings.map((addingMenu, index) => (
         <div
           key={index}
-          className="flex gap-5 items-center justify-between w-full"
+          className="flex md:gap-5 gap-2 items-center justify-between w-full md:flex-row flex-col"
         >
           <ModalConfirmationAddingsModule addingMenu={addingMenu} />
           <ModalConfirmationAddingsDeleteBtn

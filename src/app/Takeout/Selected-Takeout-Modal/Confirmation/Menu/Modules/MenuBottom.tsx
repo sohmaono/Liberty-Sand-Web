@@ -24,7 +24,7 @@ export default function ModalConfirmationMenuBottom() {
     }
   };
   return (
-    <div className="flex items-center justify-between w-full gap-5">
+    <div className="flex md:flex-row flex-col items-center md:justify-between w-full gap-5">
       <div className="flex items-end gap-[30px]">
         <div className="flex items-center gap-2">
           <p className="[font-family:'Inter-ExtraBold_Italic',Helvetica] font-extrabold italic text-[color:var(--tokens-card-text)] text-[15px]">
@@ -39,7 +39,7 @@ export default function ModalConfirmationMenuBottom() {
         </p>
       </div>
       <button
-        className="w-max py-2 px-10 rounded-full bg-primary [font-family:'Inter-ExtraBold_Italic',Helvetica] font-extrabold italic text-white text-[14px]"
+        className="md:w-max w-full py-2 px-10 rounded-full bg-primary [font-family:'Inter-ExtraBold_Italic',Helvetica] font-extrabold italic text-white text-[14px]"
         onClick={handleAddToCart}
       >
         {tab === "CART" ? "変更する" : "+追加する"}

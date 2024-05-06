@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function ModalConfirmationMenuImage() {
   const { selectedTakeout } = useCustomContext();
   return (
-    <div className="w-[600px] h-[200px] relative">
+    <div className="md:w-[600px] w-[360px] md:h-[200px] h-[140px] relative">
       <Image
         alt="SELECTED MENU"
         src={`/MenuPics/${selectedTakeout?.menu?.picture}.jpeg`}
@@ -12,8 +12,9 @@ export default function ModalConfirmationMenuImage() {
         fill
         sizes="100vw"
         style={{
-          objectFit: "cover"
-        }} />
+          objectFit: "cover",
+        }}
+      />
     </div>
   );
 }
