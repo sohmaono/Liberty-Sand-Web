@@ -3,20 +3,20 @@ import { useCustomContext } from "@/Data/Context/Context";
 export default function OrderConfirmationButtons() {
   const { setTakeoutForm } = useCustomContext();
   return (
-    <div className="flex justify-between items-center w-full px-9">
-      <div
-        className="[font-family:'Inter-Regular',Helvetica] font-normal text-black text-[22px] cursor-pointer"
+    <div className="flex justify-between items-center w-full md:px-9 px-8">
+      <p
+        className="[font-family:'Inter-Regular',Helvetica] font-semibold text-black md:text-[20px] cursor-pointer"
         onClick={() => setTakeoutForm(null)}
       >
         キャンセル
-      </div>
+      </p>
       <button
-        className="flex items-center justify-center px-[50px] py-[15px] bg-primary rounded-[20px]"
+        className="flex items-center justify-center px-[40px] py-[10px] bg-primary rounded-[15px]"
         onClick={() => {}}
       >
-        <div className="[font-family:'Inter-Regular',Helvetica] font-normal text-white text-[22px]">
+        <p className="[font-family:'Inter-Regular',Helvetica] font-semibold text-white md:text-[20px]">
           注文する
-        </div>
+        </p>
       </button>
     </div>
   );

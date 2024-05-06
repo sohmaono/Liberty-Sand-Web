@@ -13,7 +13,7 @@ export default function CartMenuModule(props: {
   return (
     <div className="flex-col items-center flex">
       <CartMenuModuleImage takeoutOrder={takeoutOrder} />
-      <div className="flex flex-col items-start gap-[20px] p-[20px] bg-[color:var(--tokens-card-background)] rounded-b-md min-w-[433px] w-[433px]">
+      <div className="flex flex-col items-start gap-[20px] p-[20px] bg-[color:var(--tokens-card-background)] rounded-b-md md:min-w-[433px] md:w-[433px] w-[330px] min-w-[330px]">
         <CartMenuModuleTitle takeoutOrder={takeoutOrder} />
         <CartMenuModuleDescription takeoutOrder={takeoutOrder} />
         <CartMenuModuleAddings takeoutOrder={takeoutOrder} />

@@ -1,5 +1,5 @@
 import { useCustomContext } from "@/Data/Context/Context";
-import CartMenuModule from "./Module/pages";
+import CartMenuModuleSwitcher from "./Switcher";
 
 export default function CartMenuMap() {
   const { cartItems } = useCustomContext();
@@ -9,7 +9,7 @@ export default function CartMenuMap() {
       style={{ width: "100vw" }}
     >
       {cartItems.map((item, index) => (
-        <CartMenuModule key={index} takeoutOrder={item} />
+        <CartMenuModuleSwitcher key={index} takeoutOrder={item} />
       ))}
     </div>
   );

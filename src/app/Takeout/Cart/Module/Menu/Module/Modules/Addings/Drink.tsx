@@ -6,7 +6,7 @@ export default function CartMenuModuleAddingsDrinkModule(props: {
   const { drinkType } = props;
   return (
     <div className="flex flex-col w-full justify-between">
-      <div className="flex items-center self-start">
+      <div className="flex items-center self-start flex-col md:flex-row">
         <div className="flex items-center gap-2">
           <p className="[font-family:'Inter-BlackItalic',Helvetica] font-black italic text-[#4d4d4d] text-[16px]">
             + {drinkType.title}

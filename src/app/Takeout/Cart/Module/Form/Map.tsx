@@ -7,7 +7,7 @@ export default function CartFormMap(props: {
 }) {
   const { formValue } = props;
   return (
-    <div className="flex flex-col gap-6 w-[509px] mx-5">
+    <div className="flex flex-col gap-6 md:w-[509px] w-[330px] mx-5">
       <CartFormModule
         title="お名前"
         formValue={formValue}

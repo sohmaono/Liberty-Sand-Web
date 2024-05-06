@@ -6,7 +6,7 @@ export default function CartMenuModuleImage(props: {
 }) {
   const { takeoutOrder } = props;
   return (
-    <div className="w-[433px] h-[200px] relative">
+    <div className="md:w-[433px] md:h-[200px] w-[330px] h-[150px] relative">
       <Image
         alt="Menu"
         src={`/MenuPics/${takeoutOrder.menu?.picture}.jpeg`}
@@ -14,8 +14,9 @@ export default function CartMenuModuleImage(props: {
         fill
         sizes="100vw"
         style={{
-          objectFit: "cover"
-        }} />
+          objectFit: "cover",
+        }}
+      />
     </div>
   );
 }

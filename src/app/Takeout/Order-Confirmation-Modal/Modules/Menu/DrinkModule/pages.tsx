@@ -1,0 +1,40 @@
+import TakeoutOrderType from "@/Data/Type/TakeoutOrder";
+
+export default function OrderConfirmationMenuDrinkModule(props: {
+  takeoutOrder: TakeoutOrderType;
+}) {
+  const { takeoutOrder } = props;
+  const drink = takeoutOrder.drink!;
+  return (
+    <div className="flex flex-col pr-[20px] pb-[20px] pt-3 pl-4 rounded-md bg-white md:min-w-[403px] min-w-[300px] items-center gap-0 h-max">
+      <p className="[font-family:'Inter-BlackItalic',Helvetica] font-black italic text-black text-[18px] self-start">
+        Drink
+      </p>
+      <div className="flex flex-col md:flex-row justify-between items-center md:gap-[10px] gap-2 w-full">
+        <div className="flex flex-col self-center">
+          <div className="flex items-center gap-4">
+            <p className="[font-family:'Inter-BlackItalic',Helvetica] font-black italic text-[#4d4d4d] text-[18px]">
+              {drink.title}
+            </p>
+            {drink.note && (
+              <p className="[font-family:'Inter-BlackItalic',Helvetica] font-black italic text-[#4d4d4d] text-[16px]">
+                ({drink.note})
+              </p>
+            )}
+          </div>
+          <p className="[font-family:'Inter-BlackItalic',Helvetica] font-black italic text-[#4d4d4d] text-[13px] ml-4">
+            （{drink.titleJP}）
+          </p>
+        </div>
+        <div className="flex md:flex-col items-end gap-5 md:gap-0 self-center">
+          <p className="[font-family:'Inter-BlackItalic',Helvetica] font-black italic text-[#4d4d4d] text-[15px]">
+            {drink.price}円
+          </p>
+          <p className="[font-family:'Inter-BlackItalic',Helvetica] font-black italic text-[#4d4d4d] text-[14px]">
+            税抜き {drink.priceWithoutTax}円
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}

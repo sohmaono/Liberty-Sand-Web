@@ -6,7 +6,7 @@ export default function OrderConfirmationMenuModuleImage(props: {
 }) {
   const { takeoutOrder } = props;
   return (
-    <div className="w-[433px] h-[200px] relative">
+    <div className="md:w-[433px] md:h-[200px] w-[330px] h-[150px] relative">
       <Image
         alt="メニュー"
         src={`/MenuPics/${takeoutOrder.menu!.picture}.jpeg`}

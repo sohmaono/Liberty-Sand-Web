@@ -26,7 +26,7 @@ export default function OrderConfirmationModal() {
     <div className="fixed inset-0 h-full w-full bg-black bg-opacity-40 z-20 justify-center items-center">
       <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 overflow-y-auto h-full">
         <div
-          className="flex flex-col items-start gap-[30px] bg-gray-200 my-12 py-8 rounded-md"
+          className="flex flex-col items-start gap-[30px] bg-gray-200 my-12 py-8 rounded-md md:w-[600px] w-[390px]"
           ref={wrapperRef}
         >
           <div className="flex flex-col items-start gap-[30px] pl-4">

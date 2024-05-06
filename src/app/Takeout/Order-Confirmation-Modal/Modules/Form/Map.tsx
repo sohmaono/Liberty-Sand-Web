@@ -5,7 +5,7 @@ export default function OrderConfirmationFormMap() {
   const { takeoutForm } = useCustomContext();
   if (takeoutForm) {
     return (
-      <div className="flex flex-col items-start gap-[40px]">
+      <div className="flex flex-col items-start gap-[25px]">
         <OrderConfirmationFormModule title="お名前" value={takeoutForm.name} />
         <OrderConfirmationFormModule
           title="電話番号"

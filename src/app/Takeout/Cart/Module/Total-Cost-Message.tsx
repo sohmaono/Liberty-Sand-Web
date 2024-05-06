@@ -12,7 +12,7 @@ export default function CartTotalCostMessage() {
     0
   );
   return (
-    <div className="flex items-center gap-8 w-[509px] mx-5">
+    <div className="flex items-center gap-8 mx-5">
       <p className="[font-family:'Inter-SemiBold',Helvetica] font-semibold text-[color:var(--tokens-card-text)] text-[16px]">
         合計金額
       </p>

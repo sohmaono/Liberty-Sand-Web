@@ -12,7 +12,7 @@ export default function OrderConfirmationMenuModule(props: {
   return (
     <div className="flex flex-col">
       <OrderConfirmationMenuModuleImage takeoutOrder={takeoutOrder} />
-      <div className="flex flex-col items-start gap-[30px] min-w-[433px] w-[433px] bg-white p-[20px] rounded-b-md">
+      <div className="flex flex-col items-start gap-[30px] md:min-w-[433px] md:w-[433px] w-[330px] min-w-[330px] bg-white p-[20px] rounded-b-md">
         <div className="flex flex-col items-start gap-[20px]">
           <OrderConfirmationMenuModuleTitle takeoutOrder={takeoutOrder} />
           <OrderConfirmationMenuModuleDescription takeoutOrder={takeoutOrder} />

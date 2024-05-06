@@ -38,10 +38,7 @@ export default function Modal() {
           </div>
         ) : (
           selectedTakeout?.drink && (
-            <div
-              className="flex items-center justify-center h-full"
-              ref={wrapperRef}
-            >
+            <div className="flex items-center justify-center h-full">
               <ModalConfirmationDrink />
             </div>
           )
