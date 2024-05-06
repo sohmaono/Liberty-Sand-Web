@@ -10,11 +10,9 @@ export default function Takeout() {
   const { tab, selectedTakeout, openSideBar, takeoutForm } = useCustomContext();
   return (
     <div className="relative w-full h-full">
-      <div className="flex items-center flex-col">
-        <div className="z-10">
-          <Header />
-        </div>
-        <div className="my-48">{tab === "CART" ? <Cart /> : <Menu />}</div>
+      <div className="flex items-center flex-col w-full h-full">
+        <Header />
+        {tab === "CART" ? <Cart /> : <Menu />}
       </div>
       {selectedTakeout && <Modal />}
       {takeoutForm && <OrderConfirmationModal />}

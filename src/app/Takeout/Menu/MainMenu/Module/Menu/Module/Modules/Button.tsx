@@ -14,13 +14,13 @@ export default function MenuModuleButton(props: { menuType: MenuType }) {
     });
   };
   return (
-    <div
+    <button
       className="flex items-center justify-center px-[40px] py-[10px] w-full bg-[color:var(--tokens-button-backgound)] rounded-[20px]"
       onClick={handleOrder}
     >
-      <div className="[font-family:'Inter-BlackItalic',Helvetica] font-black italic text-[color:var(--tokens-button-text)] text-[14px]">
+      <p className="[font-family:'Inter-BlackItalic',Helvetica] font-black italic text-[color:var(--tokens-button-text)] text-[14px]">
         +注文に追加する
-      </div>
-    </div>
+      </p>
+    </button>
   );
 }
