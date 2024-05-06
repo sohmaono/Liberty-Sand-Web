@@ -15,7 +15,7 @@ export default function HeaderCartBtn() {
       } ${cartItems.length === 0 && "opacity-50"}`}
       onClick={selectCart}
     >
-      <div className="flex flex-col items-start space-y-[-5px] ">
+      <div className="md:flex flex-col items-start space-y-[-5px] hidden">
         <p className="[font-family:'Inter-BlackItalic',Helvetica] font-black italic text-token-header-text-duplicate text-[15px] md:text-[17px]">
           CART
         </p>

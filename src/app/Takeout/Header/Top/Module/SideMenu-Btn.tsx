@@ -8,7 +8,7 @@ export default function HeaderTopSideMenuBtn() {
   };
   return (
     <div
-      className="flex flex-col justify-center gap-[5px] md:gap-[6px] cursor-pointer mr-14"
+      className="flex flex-col justify-center gap-[5px] md:gap-[6px] cursor-pointer md:mr-14 mr-7"
       onClick={handleOpenFunc}
     >
       <Image

@@ -8,10 +8,12 @@ export default function CartMenuModuleAddings(props: {
   const { takeoutOrder } = props;
   return (
     <div className="flex flex-col items-start gap-2 w-full my-2">
-      {takeoutOrder.toppings &&
-        takeoutOrder.toppings.map((topping, index) => (
-          <CartMenuModuleAddingsModule key={index} addingMenuType={topping} />
-        ))}
+      <div className="flex flex-col items-start gap-1 w-full">
+        {takeoutOrder.toppings &&
+          takeoutOrder.toppings.map((topping, index) => (
+            <CartMenuModuleAddingsModule key={index} addingMenuType={topping} />
+          ))}
+      </div>
       {takeoutOrder.patty && (
         <CartMenuModuleAddingsModule addingMenuType={takeoutOrder.patty} />
       )}
