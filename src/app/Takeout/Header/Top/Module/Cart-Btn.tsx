@@ -10,7 +10,7 @@ export default function HeaderCartBtn() {
   };
   return (
     <button
-      className={`flex items-center gap-3 py-1 px-3 ${
+      className={`flex items-center gap-2 py-1 px-3 ${
         tab === "CART" && "bg-white bg-opacity-20 rounded-lg"
       } ${cartItems.length === 0 && "opacity-50"}`}
       onClick={selectCart}
@@ -19,7 +19,7 @@ export default function HeaderCartBtn() {
         <p className="[font-family:'Inter-BlackItalic',Helvetica] font-black italic text-token-header-text-duplicate text-[15px] md:text-[17px]">
           CART
         </p>
-        <p className="[font-family:'Inter-BlackItalic',Helvetica] font-semibold italic text-token-header-text-duplicate text-[8px] md:text-[10px]">
+        <p className="[font-family:'Inter-BlackItalic',Helvetica] font-semibold italic text-token-header-text-duplicate text-[7px] md:text-[10px]">
           ご注文はこちらから
         </p>
       </div>
