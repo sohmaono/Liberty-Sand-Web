@@ -8,7 +8,7 @@ export default function OrderConfirmationFormModule(props: {
       <p className="text-black md:text-[18px] text-[15px] [font-family:'Inter-SemiBold',Helvetica] font-semibold">
         {title}
       </p>
-      <p className="text-[#4e4e4e] md:text-[20px] text-[19px] [font-family:'Inter-SemiBold',Helvetica] font-semibold">
+      <p className="text-[#4e4e4e] md:text-[19px] text-[17px] [font-family:'Inter-SemiBold',Helvetica] font-semibold">
         {value}
       </p>
     </div>

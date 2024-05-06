@@ -14,18 +14,18 @@ export default function OrderConfirmationTotalPrice() {
   return (
     <div className="flex gap-3 items-end">
       <div className="flex items-center gap-[15px]">
-        <p className="[font-family:'Inter-SemiBold',Helvetica] font-semibold text-black text-[22px]">
+        <p className="[font-family:'Inter-SemiBold',Helvetica] font-semibold text-black md:text-[22px] text-[19px]">
           合計金額
         </p>
-        <p className="[font-family:'Inter-Bold',Helvetica] font-bold text-black text-[22px]">
+        <p className="[font-family:'Inter-Bold',Helvetica] font-bold text-black md:text-[22px] text-[19px]">
           {totalPrice}円
         </p>
       </div>
       <div className="flex items-center gap-[10px] opacity-60">
-        <p className="[font-family:'Inter-SemiBold',Helvetica] font-semibold text-black text-[18px]">
+        <p className="[font-family:'Inter-SemiBold',Helvetica] font-semibold text-black md:text-[18px] text-[16px]">
           （税抜
         </p>
-        <p className="[font-family:'Inter-Bold',Helvetica] font-bold text-black text-[18px]">
+        <p className="[font-family:'Inter-Bold',Helvetica] font-bold text-black md:text-[18px] text-[16px]">
           {totalPriceWithoutTax}円）
         </p>
       </div>

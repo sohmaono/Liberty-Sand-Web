@@ -9,7 +9,11 @@ export default function HeaderTabModule(props: { tabType: HeaderTabType }) {
       className="flex flex-col items-center cursor-pointer"
       onClick={() => setTab(tabType)}
     >
-      <p className="[font-family:'Inter-BlackItalic',Helvetica] font-black italic text-white text-[16px] md:text-[18px] mx-3 whitespace-nowrap">
+      <p
+        className={`[font-family:'Inter-BlackItalic',Helvetica] font-black italic text-white text-[16px] md:text-[18px] mx-3 whitespace-nowrap ${
+          tab === "CART" && "text-opacity-80"
+        }`}
+      >
         {tabType}
       </p>
       <div
